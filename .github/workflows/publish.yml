@@ -1,0 +1,23 @@
+name: Publish resume in JSONResume format as Github Page
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo $GITHUB_WORKSPACE
+      - run: echo $PWD
+      - uses: kelvintaywl/jsonresume-github-page@v0.0.1
+        name: Export resume as HTML
+        with:
+          theme: macchiato
+          resume_filepath: resume.json
+          output_filepath: docs/index.html
