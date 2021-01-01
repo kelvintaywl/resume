@@ -14,6 +14,7 @@
   "author": "kelvintaywl@gmail.com",
   "homepage": "https://github.com/kelvintaywl/resume#readme",
   "devDependencies": {
+    "jsonresume-theme-standard-resume": "^1.3.0",
     "resume-cli": "^3.0.3"
   }
 }
