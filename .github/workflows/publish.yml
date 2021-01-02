@@ -23,7 +23,7 @@ jobs:
       - uses: kelvintaywl/jsonresume-github-page@v0.0.1
         name: Export resume as HTML
         with:
-          theme: standard-resume
+          theme: macchiato
           resume_filepath: resume.json
           # modifies the index.html
           output_filepath: docs/index.html
